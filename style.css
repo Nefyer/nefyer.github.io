@@ -97,6 +97,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+#wiki1 {
+  color: #ff90e3;
+}
+
 .intro img {
   width: 100%;
   max-width: 300px;
@@ -105,10 +109,6 @@ body {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
   animation-delay: 0.5s;
-}
-
-#wiki1 {
-  color: #ff90e3;
 }
 
 @keyframes fadeIn {
