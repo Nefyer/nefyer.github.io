@@ -17,16 +17,3 @@ function updateGreeting() {
 }
 
 document.addEventListener('DOMContentLoaded', updateGreeting);
-
-const navLinks = document.querySelectorAll('.nav-links a');
-
-navLinks.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    link.style.color = '#ad1457';
-    link.style.transition = 'color 0.3s ease';
-  });
-
-  link.addEventListener('mouseleave', () => {
-    link.style.color = '#d81b60';
-  });
-});
