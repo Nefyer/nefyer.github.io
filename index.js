@@ -15,5 +15,3 @@ function updateGreeting() {
 
   greetingElement.textContent = greetingText;
 }
-
-document.addEventListener('DOMContentLoaded', updateGreeting);
