@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #fff0f6;
+  background-color: #7e2b4c;
   color: #4a4a4a;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
@@ -44,7 +44,7 @@ body {
 
 .site-name {
   font-size: 1.75rem;
-  color: #d81b60;
+  color: #ee4885;
   font-weight: bold;
 }
 
@@ -56,7 +56,7 @@ body {
 .nav-links a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #d81b60;
+  color: #ee4885;
   font-weight: 500;
   position: relative;
   transition: color 0.2s ease;
@@ -67,7 +67,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #d81b60;
+  background-color: #ee4885;
   bottom: -2px;
   left: 0;
   transform: scaleX(0);
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ad1457;
+  color: #ff90e3;
 }
 
 .nav-links a:hover::after {
@@ -87,7 +87,7 @@ body {
 .intro h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #d81b60;
+  color: #ee4885;
 }
 
 .intro p {
