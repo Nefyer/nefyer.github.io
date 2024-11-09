@@ -116,7 +116,6 @@ body {
 }
 
 .news-section p {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   text-align: justify;
   line-height: 1.8;
@@ -160,6 +159,10 @@ body {
   color: #ff90e3;
   margin-bottom: 0.5rem;
   font-style: italic;
+}
+
+.news-entry p {
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .preview-img {
