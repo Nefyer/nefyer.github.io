@@ -8,8 +8,7 @@
 }
 
 body {
-  background-color: #7e2b4c;
-  color: #4a4a4a;
+  background-color: #fce2ec;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   transition: background-color 0.3s ease;
@@ -109,6 +108,69 @@ body {
   animation: fadeIn 1.5s ease forwards;
   animation-delay: 0.5s;
 }
+
+.news-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ee4885;
+}
+
+.news-section p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.8;
+  color: #fd42ce;
+  margin-bottom: 1.5rem;
+}
+
+.news-entry a {
+  font-size: 1.25rem;
+  color: #ee4885;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.news-entry a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ee4885;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.news-entry a:hover {
+  color: #ff90e3;
+}
+
+.news-entry a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #ff90e3;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.preview-img {
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(240, 98, 146, 0.3);
+  animation: fadeIn 1s ease;
+}
+
 
 @keyframes fadeIn {
   0% {
