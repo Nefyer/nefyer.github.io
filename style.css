@@ -56,6 +56,7 @@ body {
 .site-description {
   font-size: 1rem;
   color: #ff90e3;
+  position: relative; right: 18px;
 }
 
 .nav-links a {
