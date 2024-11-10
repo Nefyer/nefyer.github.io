@@ -34,7 +34,7 @@
     <main id="main" class="container">
       <section class="news-section">
         <h1>News Section</h1>
-        <p>I'll put something here, that is if i remember this exist lmao</p>
+        <p>I'll post something here, that is if i remember this exist lmao</p>
         <hr><br>
         <article class="news-entry">
         <h2>
@@ -49,8 +49,14 @@
             So, here’s the plan: I’m giving myself three months to become a wizard with Python. Every day, me and Python, one-on-one, figuring out how not to crash my code every five seconds. Gonna build that foundation nice and sturdy, ‘cause once Python and I are best buds, I’m moving on to C++ you know, really doubling down on the nerd vibes. And yeah, the ultimate goal is to be good enough to start freelancing or maybe tutoring. I mean, why not make some cash while leveling up my skills?<br><br>
             For anyone thinking about learning Python, here’s a pro tip from me: start small. I know, everyone says that, but there’s a reason, treat it like grinding in a game. Level up a little bit every day, and before you know it, you’re a coding legend. Python is perfect for beginners, and it opens up a ton of doors.<br><br>
             Anyway, I’ll keep y’all posted on this journey, assuming I don’t end up huddled in the corner of my room, muttering about syntax errors. But hey, every crash brings me one step closer to that Daigaku I've been dreaming for so long. So buckle up, this is gonna be one wild coding ride.</p>
-        </article>
-      </section>
+          </article>
+          <button class="go-back-button" onclick="goBack()">Go read other news</button>
+          <script>
+            function goBack() {
+              window.location.href = "/News/index.html";
+            }
+          </script>          
+        </section>
     </main>
   </body>
 </html>
