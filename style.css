@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #fce2ec;
+  background-color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   transition: background-color 0.3s ease;
@@ -35,6 +35,12 @@ body {
   object-fit: cover;
   box-shadow: 0px 4px 8px rgba(240, 98, 146, 0.3);
   animation: fadeIn 1s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.site-avatar img:hover {
+  box-shadow: 0px 4px 8px rgba(240, 98, 146, 0.3);
+  transform: scale(1.5) rotate(360deg);
 }
 
 .site-info {
@@ -99,7 +105,7 @@ body {
 .intro img {
   width: 100%;
   max-width: 300px;
-  position: relative;
+  position: relative; top: 100px;
   display: block;
   margin: 0 auto;
   border-radius: 200px;
@@ -107,6 +113,11 @@ body {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
   animation-delay: 0.5s;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.intro img:hover {
+  transform: scale(1.5) rotate(45deg);
 }
 
 .news-section h1 {
@@ -166,14 +177,32 @@ body {
 }
 
 .preview-img {
+  overflow: hidden;
   border-radius: 20px;
-  width: 100%;
+  width: 80%;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
   box-shadow: 0px 4px 8px rgba(240, 98, 146, 0.3);
   animation: fadeIn 1s ease;
 }
 
+.go-back-button {
+  display: inline-block;
+  background-color: #ee4885;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(240, 98, 146, 0.3);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.go-back-button:hover {
+  background-color: #ff90e3;
+}
 
 @keyframes fadeIn {
   0% {
