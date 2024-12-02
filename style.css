@@ -123,13 +123,13 @@ body {
   position: fixed;
   bottom: -11px;
   left: -10%;
-  width: 100px;
+  width: 200px;
   animation: runAcross 5s linear infinite, bobbing 0.6s ease-in-out infinite;
 }
 
 @keyframes runAcross {
   0% {
-    left: -10%;
+    left: -30%;
   }
   100% {
     left: 110%;
