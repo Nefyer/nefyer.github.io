@@ -124,10 +124,12 @@ body {
   bottom: -11px;
   left: -10%;
   width: 200px;
-  animation: runAcross 5s linear infinite, bobbing 0.6s ease-in-out infinite;
+  z-index: 9999;
+  will-change: transform, left;
+  animation: padorurunacross 5s linear infinite, padorubobbing 0.6s ease-in-out infinite;
 }
 
-@keyframes runAcross {
+@keyframes padorurunacross {
   0% {
     left: -30%;
   }
@@ -135,7 +137,7 @@ body {
     left: 110%;
   }
 }
-@keyframes bobbing {
+@keyframes padorubobbing {
   0%, 100% {
     transform: translateY(0);
   }
