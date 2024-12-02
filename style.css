@@ -4,14 +4,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 body {
   background-color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
-  transition: background-color 0.3s ease;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1.5rem 0;
 }
 
@@ -56,7 +57,6 @@ body {
 .site-description {
   font-size: 1rem;
   color: #ff90e3;
-  position: relative; right: 18px;
 }
 
 .nav-links a {
@@ -104,17 +104,44 @@ body {
 }
 
 .intro img {
-  width: 50%;
+  width: 30%;
   max-width: 300px;
-  position: relative; top: 50px;
   display: block;
   margin: 0 auto;
-  border-radius: 300px;
+  border-radius: 50%;
   box-shadow: 0px 4px 12px rgba(240, 98, 146, 0.3);
   opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 0.5s;
+  animation: fadeIn 1.5s ease forwards 0.5s;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.intro img:hover {
+  transform: scale(1.2) rotate(45deg);
+}
+
+.padoru {
+  position: fixed;
+  bottom: -11px;
+  left: -10%;
+  width: 100px;
+  animation: runAcross 5s linear infinite, bobbing 0.6s ease-in-out infinite;
+}
+
+@keyframes runAcross {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .intro img:hover {
