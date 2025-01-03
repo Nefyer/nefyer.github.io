@@ -119,7 +119,7 @@ body {
   transform: scale(1.2) rotate(45deg);
 }
 
-.padoru(offline) {
+.pador(offline) {
   position: fixed;
   bottom: -11px;
   left: -10%;
