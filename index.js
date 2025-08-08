@@ -1,5 +1,6 @@
 function updateGreeting() {
   const greetingElement = document.querySelector('.intro h1');
+  if (!greetingElement) return;
   const now = new Date();
   const hours = now.getHours();
 
@@ -18,8 +19,8 @@ function updateGreeting() {
 
 document.addEventListener('DOMContentLoaded', () => {
   updateGreeting();
-  const toggle = document.querySelector('.topbar-toggle');
-  const panel = document.querySelector('.topbar-panel');
+  const toggle = document.querySelector('.sidebar-toggle');
+  const panel = document.querySelector('.sidebar-panel');
   if (toggle && panel) {
     toggle.addEventListener('click', () => {
       panel.classList.toggle('open');
