@@ -19,11 +19,4 @@ function updateGreeting() {
 
 document.addEventListener('DOMContentLoaded', () => {
   updateGreeting();
-  const toggle = document.querySelector('.sidebar-toggle');
-  const panel = document.querySelector('.sidebar-panel');
-  if (toggle && panel) {
-    toggle.addEventListener('click', () => {
-      panel.classList.toggle('open');
-    });
-  }
 });
